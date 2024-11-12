@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT Sidebar Interface</title>
+    <title>Backoffice ChatGPT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>ChatGPT Assistant</h2>
-        <div id="chat-container">
-            <div id="messages"></div>
-            <input type="text" id="user-input" placeholder="Type your question here...">
-            <button id="send-button">Send</button>
+    <!-- Barra superior con botones -->
+    <div class="header">
+        <button class="header-button">Inicio</button>
+        <button class="header-button">Usuarios</button>
+        <button class="header-button">Configuración</button>
+        <button class="header-button">Reportes</button>
+        <button class="header-button">Soporte</button>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Barra lateral de chat -->
+        <div class="sidebar">
+            <h2>ChatGPT Assistant</h2>
+            <div id="chat-container">
+                <div id="messages"></div>
+                <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+
+        <!-- Área de contenido principal -->
+        <div class="content">
+            <h1>Panel Principal</h1>
+            <p>Bienvenido al backoffice. Selecciona una opción en el menú superior para empezar.</p>
         </div>
     </div>
-    <div class="main-content">
-        <h1>Main Content Area</h1>
-        <p>This is the main area of the page where content goes.</p>
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
