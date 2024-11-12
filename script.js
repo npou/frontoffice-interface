@@ -4,7 +4,7 @@ document.getElementById('send-button').addEventListener('click', async () => {
     const userInput = document.getElementById('user-input').value;
     if (!userInput) return;
 
-    addMessage(`You: ${userInput}`, 'user');
+    addMessage(`Tú: ${userInput}`, 'user');
     document.getElementById('user-input').value = '';
 
     const response = await getChatGPTResponse(userInput);
@@ -21,9 +21,9 @@ async function getChatGPTResponse(prompt) {
             'Authorization': `Bearer ${apiKey}`
         },
         body: JSON.stringify({
-            model: "text-davinci-003", // Puedes elegir el modelo que prefieras
+            model: "text-davinci-003", // Puedes elegir otro modelo si prefieres
             prompt: prompt,
-            max_tokens: 150
+            max_tokens: 100
         })
     });
 
