@@ -1,4 +1,4 @@
-const apiKey = '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'; // Reemplaza con tu clave de API de OpenAI
+const apiKey = 'aaaa'; // Reemplaza con tu clave de API de OpenAI
 
 document.getElementById('send-button').addEventListener('click', async () => {
     const userInput = document.getElementById('user-input').value;
