@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="menu">
+            <button>Ouvrir</button>
+            <button>Sauvegarder</button>
+            <button>Transferts</button>
+            <button>Fermer</button>
+            <button>Exercices</button>
+            <button>Périodes de travail</button>
+            <button>Fiche Client</button>
+            <button>Mes banques</button>
+            <button>Note de travail</button>
+            <!-- Añade más botones si es necesario -->
+        </div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Tabla de datos -->
+        <div class="table-container">
+            <h3>Gestion des exercices</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Visa</th>
+                        <th>Défaut</th>
+                        <th>État</th>
+                        <th>Date début</th>
+                        <th>Date fin</th>
+                        <th>Code</th>
+                        <th>Nombre d'écritures</th>
+                        <th>A-Nouveau</th>
+                        <th>Immobilisations</th>
+                        <th>Emprunts Contrats</th>
+                        <th>Stocks</th>
+                        <th>Archive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td>Clos</td>
+                        <td>01/10/2018</td>
+                        <td>30/09/2019</td>
+                        <td>18/19</td>
+                        <td>85</td>
+                        <td><input type="checkbox"></td>
+                        <td>Clos</td>
+                        <td>Clos</td>
+                        <td>Clos</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <!-- Añade más filas aquí según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Área de comentarios -->
+        <div class="comments">
+            <label for="comment">Commentaire de l'exercice</label>
+            <textarea id="comment" rows="4"></textarea>
+        </div>
+    </div>
+</body>
+</html>
